@@ -6,6 +6,15 @@
     <title>Home</title>
   </head>
   <body>
-    <h1>Home</h1>
+    <h1>Generate Donation Page</h1>
+    <form action="" method="post">
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="selectCountry">Select Country</option>
+        <% for(let country of countries){ %>
+        <option value=<%= country.isoCode %>><%= country.name %></option>
+        <% } %>
+      </select>
+    </form>
   </body>
 </html>

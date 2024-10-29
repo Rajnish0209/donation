@@ -7,17 +7,17 @@
   </head>
   <body>
     <form action="">
+      <label for="country">Country:</label>
       <select name="country" id="country">
-        <option value="Country">Select country</option>
-        <% for(let country of countries){ %>
-        <option value="<%= country.isoCode  %>"><%= country.name %></option>
-        <% } %>
+        <option value="">Select country</option>
       </select>
       <br />
+      <label for="state">State:</label>
       <select name="state" id="state">
         <option value="">Select state</option>
       </select>
       <br />
+      <label for="city">City</label>
       <select name="city" id="city">
         <option value="">Select city</option>
       </select>
